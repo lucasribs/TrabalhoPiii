@@ -9,5 +9,6 @@ public class Main {
         System.out.println();
         tb.jogada(1, 1);
         tb.exibirTabuleiro();
+        System.out.println();
     }
 }
