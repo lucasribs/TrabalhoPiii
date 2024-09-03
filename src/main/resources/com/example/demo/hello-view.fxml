@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" onMouseClicked="#onHelloButtonClick" prefHeight="371.0" prefWidth="422.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <GridPane fx:id="tabuleiro" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="382.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="110.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="138.0" minHeight="10.0" prefHeight="138.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="186.0" minHeight="0.0" prefHeight="135.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <ImageView id="p00x00" fitHeight="76.0" fitWidth="72.0" GridPane.rowIndex="0" GridPane.columnIndex="0" onMouseClicked="#JogadaMouse" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+            <image>
+               <Image url="@vazio.png" />
+            </image>
+         </ImageView>
+          <ImageView id="p00x01" fitHeight="76.0" fitWidth="72.0" GridPane.rowIndex="0" GridPane.columnIndex="1" onMouseClicked="#JogadaMouse" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+              <image>
+                  <Image url="@vazio.png" />
+              </image>
+          </ImageView>
+          <ImageView id="p00x02" fitHeight="76.0" fitWidth="72.0" GridPane.rowIndex="0" GridPane.columnIndex="2" onMouseClicked="#JogadaMouse" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+              <image>
+                  <Image url="@vazio.png" />
+              </image>
+          </ImageView>
+
+          <ImageView id="p01x00" fitHeight="76.0" fitWidth="72.0" GridPane.rowIndex="1" GridPane.columnIndex="0" onMouseClicked="#JogadaMouse" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+              <image>
+                  <Image url="@vazio.png" />
+              </image>
+          </ImageView>
+          <ImageView id="p01x01" fitHeight="76.0" fitWidth="72.0" GridPane.rowIndex="1" GridPane.columnIndex="1" onMouseClicked="#JogadaMouse" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+              <image>
+                  <Image url="@vazio.png" />
+              </image>
+          </ImageView>
+          <ImageView id="p01x02" fitHeight="76.0" fitWidth="72.0" GridPane.rowIndex="1" GridPane.columnIndex="2" onMouseClicked="#JogadaMouse" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+              <image>
+                  <Image url="@vazio.png" />
+              </image>
+          </ImageView>
+
+
+          <ImageView id="p00x00" fitHeight="76.0" fitWidth="72.0" GridPane.rowIndex="2" GridPane.columnIndex="0" onMouseClicked="#JogadaMouse" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+              <image>
+                  <Image url="@vazio.png" />
+              </image>
+          </ImageView>
+          <ImageView id="p00x01" fitHeight="76.0" fitWidth="72.0" GridPane.rowIndex="2" GridPane.columnIndex="1" onMouseClicked="#JogadaMouse" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+              <image>
+                  <Image url="@vazio.png" />
+              </image>
+          </ImageView>
+          <ImageView id="p00x02" fitHeight="76.0" fitWidth="72.0" GridPane.rowIndex="2" GridPane.columnIndex="2" onMouseClicked="#JogadaMouse" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+              <image>
+                  <Image url="@vazio.png" />
+              </image>
+          </ImageView>
+      </children>
+   </GridPane>
+    <Button onAction="#onHelloButtonClick" text="Hello!" />
+   <Button mnemonicParsing="false" onAction="#onOutraCoisa" text="Button" />
+
+    <Label fx:id="welcomeText" />
+</VBox>
